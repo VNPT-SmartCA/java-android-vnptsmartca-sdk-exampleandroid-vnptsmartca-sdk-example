@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/getAuthID"
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/main"
+        android:layout_width="wrap_content"
+        android:text="Lấy access token"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="@id/main"
+        android:padding="10dp"
+        android:background="@color/colorEkycYellow600"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnMainInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:hint="MainInfo"
+        android:textSize="16dp"
+        app:layout_constraintTop_toBottomOf="@id/getAuthID"
+        android:text="Quản lý tài khoản"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/plain_text_input"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="43dp"
+        android:autofillHints=""
+        android:hint="Vui lòng nhập TranID"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainInfo" />
+    <Button
+        android:id="@+id/btnConfirmTran"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="43dp"
+        android:hint="ActiveAccount"
+        android:text="Xác nhận giao dịch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plain_text_input" />
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="178dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="43dp"
+        android:text="Đăng xuất"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConfirmTran" />
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="178dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="43dp"
+        android:text="Tạo tài khoản"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignOut" />
+</androidx.constraintlayout.widget.ConstraintLayout>
