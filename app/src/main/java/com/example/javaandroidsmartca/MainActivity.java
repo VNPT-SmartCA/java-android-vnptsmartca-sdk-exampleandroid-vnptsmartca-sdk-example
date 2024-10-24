@@ -60,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
         customParams.setColorSecondBtn("#DEF7EB");
         customParams.setPackageDefault("PS0");
         customParams.setFeaturesLink("https://www.google.com/?hl=vi");
-        ConfigSDK config = new ConfigSDK("4185-637127995547330633.apps.signserviceapi.com",  // clientId
-                "NGNhMzdmOGE-OGM2Mi00MTg0",                           // clientSecret
+        ConfigSDK config = new ConfigSDK("",  // clientId
+                "",                           // clientSecret
                 customParams,                         // env
                 SmartCALanguage.INSTANCE.getVI(),                                        // customParams (assuming this is a HashMap or similar)
                 SmartCAEnvironment.INSTANCE.getDEMO_ENV(),                                   // lang
